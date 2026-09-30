@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anatomia Externa & Pericárdio | Resumos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            medical: { 50:'#f0f9ff',100:'#e0f2fe',200:'#bae6fd',300:'#7dd3fc',400:'#38bdf8',500:'#0ea5e9',600:'#0284c7',700:'#0369a1',800:'#075985',900:'#0c4a6e' }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .prose h2 { @apply text-xl font-bold mt-10 mb-4 text-medical-800 dark:text-medical-300 border-b border-slate-200 dark:border-slate-700 pb-2; }
+    .prose h3 { @apply text-lg font-semibold mt-6 mb-3 text-slate-800 dark:text-slate-200; }
+    .prose ul { @apply list-disc pl-5 space-y-1 my-3; }
+    .prose p { @apply my-3 leading-relaxed; }
+    .prose strong { @apply font-semibold text-slate-900 dark:text-white; }
+    .highlight { @apply bg-medical-50 dark:bg-slate-800/80 border-l-4 border-medical-500 pl-4 py-3 my-4 rounded-r-lg; }
+    .alert { @apply bg-rose-50 dark:bg-rose-900/30 border-l-4 border-rose-500 pl-4 py-3 my-4 rounded-r-lg; }
+  </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen">
+  <nav class="sticky top-0 z-50 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-700">
+    <div class="max-w-3xl mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-2 text-medical-700 dark:text-medical-400 font-medium text-sm">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Voltar
+      </a>
+      <button id="themeToggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700">
+        <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <article class="max-w-3xl mx-auto px-4 py-10 prose">
+    <header class="mb-10">
+      <p class="text-sm text-medical-600 dark:text-medical-400 font-medium mb-1">Prof. Leandro · 14/08/2026 · Fontes: Aula, Moore, Netter, Gray</p>
+      <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">Anatomia Externa do Coração & Pericárdio</h1>
+    </header>
+
+    <section>
+      <h2>Cavidade Torácica</h2>
+      <p>Abriga 3 compartimentos: cavidades pleurais (laterais) e mediastino (centro).</p>
+    </section>
+
+    <section>
+      <h2>Mediastino</h2>
+      <p>Parte visceral da cavidade torácica que separa as duas cavidades pleurais.</p>
+      <p><strong>Limites:</strong></p>
+      <ul>
+        <li>Superior: abertura torácica superior</li>
+        <li>Inferior: diafragma</li>
+        <li>Anterior: esterno</li>
+        <li>Laterais: pleuras mediastinais e cavidades pleurais adjacentes</li>
+      </ul>
+      <p><strong>Conteúdo principal:</strong> coração e grandes vasos, traqueia e brônquios, esôfago, timo, ducto torácico, pericárdio.</p>
+
+      <h3>Divisões</h3>
+      <ul>
+        <li><strong>Mediastino superior:</strong> da abertura superior do tórax até a junção T4/T5 (ângulo do esterno)</li>
+        <li><strong>Mediastino inferior:</strong> entre o plano transverso do tórax e o diafragma — subdividido em:
+          <ul class="list-disc pl-5 mt-1">
+            <li>Anterior (entre esterno e pericárdio)</li>
+            <li>Médio (saco pericárdico, coração, origens dos grandes vasos)</li>
+            <li>Posterior (entre pericárdio e vértebras)</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Ducto Torácico</h2>
+      <ul>
+        <li>Drena ¾ da linfa do corpo</li>
+        <li>Origina-se da cisterna do quilo e ascende pelo hiato aórtico do diafragma</li>
+        <li>Recebe ramos dos espaços intercostais médios e superiores</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pericárdio</h2>
+      <p>Dupla camada de tecido que envolve o coração e as raízes dos grandes vasos, situado no mediastino.</p>
+
+      <h3>Ligamentos</h3>
+      <ul>
+        <li>Esternopericárdico superior e inferior</li>
+        <li>Frênico-pericárdico anterior</li>
+        <li>Vertebropericárdico</li>
+        <li>Frenicopericárdico direito</li>
+      </ul>
+
+      <h3>Pericárdio Fibroso</h3>
+      <ul>
+        <li>Camada externa resistente, contínua com o tendão do diafragma (ligamento pericardicofrênico)</li>
+        <li>Conectado ao esterno pelos ligamentos esternopericárdicos</li>
+        <li>Incorporado superiormente à túnica adventícia dos grandes vasos</li>
+        <li>Ligado posteriormente às estruturas do mediastino posterior</li>
+        <li>Protege o coração contra enchimento excessivo (derrame pericárdico)</li>
+      </ul>
+
+      <h3>Pericárdio Seroso</h3>
+      <ul>
+        <li>Camada interna — membrana serosa brilhante (mesotélio)</li>
+        <li><strong>Lâmina parietal:</strong> reveste o pericárdio fibroso</li>
+        <li><strong>Lâmina visceral (epicárdio):</strong> reflete sobre as raízes dos grandes vasos e cobre a superfície externa do coração</li>
+      </ul>
+
+      <h3>Cavidade Pericárdica</h3>
+      <p>Espaço virtual entre as lâminas visceral e parietal. Contém fina película de líquido que permite movimento sem atrito.</p>
+    </section>
+
+    <section>
+      <h2>Seios do Pericárdio</h2>
+      <h3>Seio Transverso</h3>
+      <ul>
+        <li>Passagem transversal entre os dois grupos de vasos e suas reflexões</li>
+        <li>Posterior à aorta ascendente e tronco pulmonar; anterior à VCS</li>
+        <li>Importância: clampeamento cirúrgico</li>
+      </ul>
+      <h3>Seio Oblíquo</h3>
+      <ul>
+        <li>Formado pela reflexão do pericárdio seroso ao redor do segundo grupo de vasos</li>
+        <li>Largo recesso na parede posterior do saco pericárdico</li>
+        <li>Fundo de saco cego</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Vascularização e Inervação do Pericárdio</h2>
+      <h3>Artérias</h3>
+      <ul>
+        <li>Principal: artéria pericardicofrênica (ramo da artéria torácica interna)</li>
+        <li>Artéria musculofrênica (ramo terminal da torácica interna)</li>
+        <li>Ramos brônquicos, esofágicos e frênicos superiores (aorta torácica)</li>
+        <li>Artérias coronárias irrigam a lâmina visceral</li>
+      </ul>
+      <h3>Veias</h3>
+      <ul>
+        <li>Veias pericardicofrênicas → veias braquicefálicas</li>
+        <li>Sistema venoso ázigo</li>
+      </ul>
+      <h3>Inervação</h3>
+      <ul>
+        <li>Nervos frênicos (fibras sensitivas para dor)</li>
+        <li>Nervos vagos</li>
+        <li>Troncos simpáticos (vasomotores)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tamponamento Cardíaco</h2>
+      <div class="alert">
+        <p><strong>Emergência médica.</strong> Acúmulo de sangue ou líquido no pericárdio dificulta a diástole (enchimento).</p>
+      </div>
+      <p><strong>Causas:</strong> derrame pericárdico, hemopericárdio (perfuração, infarto, hemorragia pós-cirúrgica).</p>
+      <p><strong>Sintomas:</strong> mal-estar, fraqueza, dor torácica, anorexia, dispneia.</p>
+      <p><strong>Sinais:</strong> hipotensão, taquicardia, estase jugular, diminuição do débito cardíaco.</p>
+      <p><strong>Diagnóstico — Tríade de Beck:</strong> estase jugular + hipotensão + abafamento das bulhas cardíacas.</p>
+      <p><strong>Tratamento:</strong> pericardiocentese (agulha de grande calibre; ponto de referência: apêndice xifoide).</p>
+    </section>
+
+    <section>
+      <h2>Localização e Limites do Coração</h2>
+      <ul>
+        <li>Localizado no mediastino, envolvido pelo pericárdio</li>
+        <li><strong>Superfície anterior:</strong> abaixo do esterno e costelas</li>
+        <li><strong>Superfície inferior (diafragmática):</strong> maior parte repousa sobre o diafragma</li>
+        <li><strong>Borda direita:</strong> voltada para o pulmão direito (VCS → VCI)</li>
+        <li><strong>Borda esquerda:</strong> borda pulmonar (base → ápice)</li>
+        <li><strong>Limite superior:</strong> grandes vasos</li>
+        <li><strong>Posterior:</strong> traqueia, esôfago, aorta descendente</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Características Externas</h2>
+      <ul>
+        <li>Formato de cone; tamanho de um punho fechado</li>
+        <li><strong>Ápice:</strong> pontiagudo, formado pelo ventrículo esquerdo (inferolateral). Imóvel no ciclo cardíaco; local do batimento apical (valva mitral)</li>
+        <li><strong>Base:</strong> porção mais larga, formada pelo átrio esquerdo, voltada posteriormente</li>
+      </ul>
+
+      <h3>Faces</h3>
+      <ul>
+        <li><strong>Anterior (esternocostal):</strong> principalmente ventrículo direito</li>
+        <li><strong>Inferior (diafragmática):</strong> ventrículo esquerdo + parte do direito</li>
+        <li><strong>Pulmonar esquerda:</strong> ventrículo esquerdo</li>
+        <li><strong>Pulmonar direita:</strong> parcialmente átrio direito</li>
+      </ul>
+
+      <h3>Margens</h3>
+      <ul>
+        <li>Direita: átrio direito (VCS–VCI)</li>
+        <li>Inferior: ventrículo direito + pequena parte do esquerdo</li>
+        <li>Esquerda: ventrículo esquerdo + aurícula esquerda</li>
+        <li>Superior: átrios e aurículas</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Sulcos Externos</h2>
+      <ul>
+        <li><strong>Sulco coronário (atrioventricular):</strong> divide átrios e ventrículos; interrompido anteriormente por aorta e tronco pulmonar</li>
+        <li><strong>Sulco interventricular anterior:</strong> artéria interventricular anterior + veia cardíaca magna</li>
+        <li><strong>Sulco interventricular posterior:</strong> artéria e veia interventriculares posteriores</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Grandes Vasos</h2>
+      <ul>
+        <li><strong>Raiz aórtica:</strong> entre valva aórtica e junção sinotubular</li>
+        <li><strong>Aorta ascendente:</strong> do óstio da aorta até o tronco braquicefálico; ramos = artérias coronárias</li>
+        <li><strong>Veias braquicefálicas:</strong> união de jugular interna + subclávia → formam a VCS</li>
+        <li><strong>Veia cava superior:</strong> sangue de estruturas acima do diafragma</li>
+        <li><strong>Tronco braquicefálico:</strong> primeiro e maior ramo do arco aórtico</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Artérias Coronárias</h2>
+      <p>Primeiros ramos da aorta; irrigam miocárdio e epicárdio.</p>
+
+      <h3>Artéria Coronária Esquerda (ACE)</h3>
+      <ul>
+        <li>Passa entre aurícula esquerda e tronco pulmonar</li>
+        <li><strong>Ramo circunflexo:</strong> acompanha sulco coronário; ramos marginais esquerdos</li>
+        <li><strong>Ramo interventricular anterior (DAE):</strong> desce no sulco interventricular anterior até o ápice; ramos diagonais</li>
+        <li><strong>Supre:</strong> átrio esquerdo, VE, parte do VD, maior parte do SIV, nó SA (em alguns)</li>
+      </ul>
+
+      <h3>Artéria Coronária Direita (ACD)</h3>
+      <ul>
+        <li>Corre no sulco atrioventricular à direita e ao redor da face posterior</li>
+        <li>Ramo do nó SA (próximo à origem)</li>
+        <li>Ramo marginal direito</li>
+        <li>Ramo do nó AV (na cruz do coração)</li>
+        <li>Ramo interventricular posterior</li>
+        <li><strong>Supre:</strong> átrio direito, maior parte do VD, face diafragmática do VE, parte dos septos, nó SA (60% dos casos), nó AV</li>
+      </ul>
+
+      <h3>Ligamento Arterial</h3>
+      <p>Remanescente do ducto arterial fetal: da raiz da artéria pulmonar esquerda até a face inferior do arco da aorta.</p>
+    </section>
+  </article>
+
+  <footer class="border-t border-slate-200 dark:border-slate-700 py-8 mt-12">
+    <div class="max-w-3xl mx-auto px-4 text-center text-sm text-slate-500">
+      <a href="../index.html" class="text-medical-600 dark:text-medical-400 hover:underline">← Todos os resumos</a>
+    </div>
+  </footer>
+
+  <script>
+    const html = document.documentElement;
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) html.classList.add('dark');
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+    });
+  </script>
+</body>
+</html>

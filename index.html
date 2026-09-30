@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resumos de Anatomia | Acesso Rápido</title>
-  <meta name="description" content="Resumos organizados de anatomia do coração, pericárdio e caixa torácica para estudo rápido.">
+  <meta name="description" content="Resumos em PDF de anatomia do coração, pericárdio e caixa torácica para estudo rápido.">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -13,21 +13,12 @@
         extend: {
           colors: {
             medical: {
-              50: '#f0f9ff',
-              100: '#e0f2fe',
-              200: '#bae6fd',
-              300: '#7dd3fc',
-              400: '#38bdf8',
-              500: '#0ea5e9',
-              600: '#0284c7',
-              700: '#0369a1',
-              800: '#075985',
-              900: '#0c4a6e',
+              50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd', 300: '#7dd3fc',
+              400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1',
+              800: '#075985', 900: '#0c4a6e',
             }
           },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-          }
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
         }
       }
     }
@@ -43,7 +34,6 @@
   </style>
 </head>
 <body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen transition-colors duration-300">
-  <!-- Navbar -->
   <nav class="sticky top-0 z-50 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-700">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
@@ -53,25 +43,24 @@
         </a>
         <div class="flex items-center gap-4">
           <div class="relative hidden sm:block">
-            <input type="search" id="searchInput" placeholder="Buscar tópicos..." 
+            <input type="search" id="searchInput" placeholder="Buscar tópicos..."
               class="w-64 pl-10 pr-4 py-2 rounded-full bg-slate-100 dark:bg-slate-700 border-0 focus:ring-2 focus:ring-medical-500 text-sm">
             <svg class="w-5 h-5 absolute left-3 top-2.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
           </div>
           <button id="themeToggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition" aria-label="Alternar tema">
-            <svg id="sunIcon" class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-            <svg id="moonIcon" class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+            <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
           </button>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- Hero -->
   <header class="bg-gradient-to-br from-medical-600 to-medical-800 dark:from-medical-900 dark:to-slate-900 text-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
       <h1 class="text-4xl sm:text-5xl font-bold mb-4 tracking-tight">Resumos de Anatomia</h1>
       <p class="text-lg sm:text-xl text-medical-100 max-w-2xl mx-auto mb-8">
-        Acesso rápido e organizado aos seus resumos de aula. Coração, pericárdio, caixa torácica e muito mais.
+        Clique no card e o PDF original abre na hora. Ideal para revisar no celular ou no computador.
       </p>
       <div class="flex flex-wrap justify-center gap-3 text-sm">
         <span class="px-3 py-1 bg-white/20 rounded-full">Breno Holzmann-78</span>
@@ -80,64 +69,104 @@
     </div>
   </header>
 
-  <!-- Topics Grid -->
   <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <h2 class="text-2xl font-bold mb-8 text-slate-700 dark:text-slate-200">Tópicos disponíveis</h2>
-    
+    <h2 class="text-2xl font-bold mb-8 text-slate-700 dark:text-slate-200">PDFs disponíveis</h2>
+
     <div id="topicsGrid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <!-- Card 1 -->
-      <a href="topics/coracao-interno.html" class="card-hover block bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden shadow-sm">
+
+      <a href="pdfs/anatomia-interna-coracao.pdf" target="_blank" rel="noopener"
+         class="card-hover block bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden shadow-sm">
         <div class="h-32 bg-gradient-to-br from-rose-500 to-rose-700 flex items-center justify-center">
-          <svg class="w-16 h-16 text-white/90" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          <svg class="w-14 h-14 text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 13h6M9 17h4"/>
+          </svg>
         </div>
         <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-medium px-2 py-0.5 rounded-full bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300">PDF</span>
+            <span class="text-xs text-slate-500">~19 MB · 19 páginas</span>
+          </div>
           <h3 class="text-lg font-semibold mb-2">Anatomia Interna do Coração</h3>
           <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Câmaras, sulcos, seios, átrios, ventrículos, valvas, trabéculas e condução.</p>
           <div class="flex items-center text-medical-600 dark:text-medical-400 text-sm font-medium">
-            Abrir resumo
-            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            Abrir PDF
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
           </div>
         </div>
       </a>
 
-      <!-- Card 2 -->
-      <a href="topics/pericardio.html" class="card-hover block bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden shadow-sm">
+      <a href="pdfs/anatomia-pericardio.pdf" target="_blank" rel="noopener"
+         class="card-hover block bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden shadow-sm">
         <div class="h-32 bg-gradient-to-br from-sky-500 to-sky-700 flex items-center justify-center">
-          <svg class="w-16 h-16 text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/><circle cx="12" cy="12" r="9" stroke-width="1.5"/></svg>
+          <svg class="w-14 h-14 text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 13h6M9 17h4"/>
+          </svg>
         </div>
         <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-medium px-2 py-0.5 rounded-full bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300">PDF</span>
+            <span class="text-xs text-slate-500">~11 MB · 17 páginas</span>
+          </div>
           <h3 class="text-lg font-semibold mb-2">Anatomia Externa & Pericárdio</h3>
           <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Mediastino, pericárdio fibroso e seroso, seios, vasos, coronárias e tamponamento.</p>
           <div class="flex items-center text-medical-600 dark:text-medical-400 text-sm font-medium">
-            Abrir resumo
-            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            Abrir PDF
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
           </div>
         </div>
       </a>
 
-      <!-- Card 3 -->
-      <a href="topics/caixa-toracica.html" class="card-hover block bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden shadow-sm">
+      <a href="pdfs/caixa-toracica.pdf" target="_blank" rel="noopener"
+         class="card-hover block bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden shadow-sm">
         <div class="h-32 bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center">
-          <svg class="w-16 h-16 text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+          <svg class="w-14 h-14 text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 13h6M9 17h4"/>
+          </svg>
         </div>
         <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-medium px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">PDF</span>
+            <span class="text-xs text-slate-500">~21 MB · 25 páginas</span>
+          </div>
           <h3 class="text-lg font-semibold mb-2">Parede Torácica & Caixa Torácica</h3>
           <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Costelas, vértebras, esterno, articulações, músculos intercostais e espaços.</p>
           <div class="flex items-center text-medical-600 dark:text-medical-400 text-sm font-medium">
-            Abrir resumo
-            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            Abrir PDF
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
           </div>
         </div>
       </a>
     </div>
 
-    <!-- Info box -->
-    <div class="mt-12 p-6 bg-medical-50 dark:bg-slate-800 rounded-2xl border border-medical-100 dark:border-slate-700">
-      <h3 class="font-semibold text-medical-800 dark:text-medical-300 mb-2">Como usar</h3>
-      <p class="text-sm text-slate-600 dark:text-slate-400">
-        Clique em um card para abrir o resumo completo. Use a busca no topo para filtrar. 
-        Novos resumos serão adicionados conforme você enviar. O site está no GitHub Pages e atualiza automaticamente.
+    <div class="mt-12 p-6 bg-amber-50 dark:bg-amber-900/20 rounded-2xl border border-amber-200 dark:border-amber-800">
+      <h3 class="font-semibold text-amber-800 dark:text-amber-300 mb-2">Importante — subir os PDFs</h3>
+      <p class="text-sm text-amber-900/80 dark:text-amber-200/80 leading-relaxed">
+        Os cards já apontam para a pasta <code class="bg-amber-100 dark:bg-amber-900/40 px-1 rounded">pdfs/</code>.
+        Como os arquivos são grandes (11–21 MB), faça o upload manual uma vez:
       </p>
+      <ol class="list-decimal pl-5 mt-3 text-sm text-amber-900/80 dark:text-amber-200/80 space-y-1">
+        <li>Abra o repositório: <a href="https://github.com/fg9dndsbk6-droid/anatomia-resumos" class="underline font-medium" target="_blank">github.com/fg9dndsbk6-droid/anatomia-resumos</a></li>
+        <li>Clique em <strong>Add file → Upload files</strong></li>
+        <li>Crie a pasta <code class="bg-amber-100 dark:bg-amber-900/40 px-1 rounded">pdfs/</code> e arraste os 3 arquivos com estes nomes exatos:</li>
+      </ol>
+      <ul class="list-disc pl-8 mt-2 text-sm text-amber-900/80 dark:text-amber-200/80 space-y-1">
+        <li><code>anatomia-interna-coracao.pdf</code></li>
+        <li><code>anatomia-pericardio.pdf</code></li>
+        <li><code>caixa-toracica.pdf</code></li>
+      </ul>
+      <p class="text-sm mt-3 text-amber-900/80 dark:text-amber-200/80">
+        Depois disso o site abre os PDFs originais direto. Novos resumos: é só mandar o PDF que eu adiciono o card.
+      </p>
+    </div>
+
+    <div class="mt-8 text-center text-sm text-slate-500 dark:text-slate-400">
+      Também existem versões em texto (HTML) se preferir:
+      <a href="topics/coracao-interno.html" class="text-medical-600 dark:text-medical-400 hover:underline ml-1">Coração</a> ·
+      <a href="topics/pericardio.html" class="text-medical-600 dark:text-medical-400 hover:underline">Pericárdio</a> ·
+      <a href="topics/caixa-toracica.html" class="text-medical-600 dark:text-medical-400 hover:underline">Caixa Torácica</a>
     </div>
   </main>
 
@@ -152,7 +181,6 @@
   </footer>
 
   <script>
-    // Theme toggle
     const html = document.documentElement;
     const themeToggle = document.getElementById('themeToggle');
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -163,14 +191,12 @@
       localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
     });
 
-    // Simple search
     const searchInput = document.getElementById('searchInput');
     const cards = document.querySelectorAll('#topicsGrid > a');
     searchInput.addEventListener('input', (e) => {
       const q = e.target.value.toLowerCase();
       cards.forEach(card => {
-        const text = card.textContent.toLowerCase();
-        card.style.display = text.includes(q) ? '' : 'none';
+        card.style.display = card.textContent.toLowerCase().includes(q) ? '' : 'none';
       });
     });
   </script>

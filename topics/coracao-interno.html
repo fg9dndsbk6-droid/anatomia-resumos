@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anatomia Interna do Coração | Resumos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            medical: { 50:'#f0f9ff',100:'#e0f2fe',200:'#bae6fd',300:'#7dd3fc',400:'#38bdf8',500:'#0ea5e9',600:'#0284c7',700:'#0369a1',800:'#075985',900:'#0c4a6e' }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .prose h2 { @apply text-xl font-bold mt-10 mb-4 text-medical-800 dark:text-medical-300 border-b border-slate-200 dark:border-slate-700 pb-2; }
+    .prose h3 { @apply text-lg font-semibold mt-6 mb-3 text-slate-800 dark:text-slate-200; }
+    .prose ul { @apply list-disc pl-5 space-y-1 my-3; }
+    .prose p { @apply my-3 leading-relaxed; }
+    .prose strong { @apply font-semibold text-slate-900 dark:text-white; }
+    .highlight { @apply bg-medical-50 dark:bg-slate-800/80 border-l-4 border-medical-500 pl-4 py-3 my-4 rounded-r-lg; }
+  </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen">
+  <nav class="sticky top-0 z-50 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-700">
+    <div class="max-w-3xl mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-2 text-medical-700 dark:text-medical-400 font-medium text-sm">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Voltar
+      </a>
+      <button id="themeToggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700">
+        <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <article class="max-w-3xl mx-auto px-4 py-10 prose">
+    <header class="mb-10">
+      <p class="text-sm text-medical-600 dark:text-medical-400 font-medium mb-1">Prof. Enrico Campos · Fontes: Aula, Moore, Netter, Prometheus</p>
+      <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">Anatomia Interna do Coração</h1>
+    </header>
+
+    <section>
+      <h2>Cardiomiopatia do Atleta</h2>
+      <p>Reduz a cavidade e altera a diferença de pressão da circulação.</p>
+    </section>
+
+    <section>
+      <h2>Sulcos Externos do Coração</h2>
+      <p>O coração é uma estrutura oca, dividida internamente em quatro câmaras. Essas divisões criam depressões na superfície externa conhecidas como <strong>sulcos</strong>.</p>
+      
+      <h3>Sulco Coronário (Atrioventricular)</h3>
+      <ul>
+        <li>Corre transversalmente ao redor do coração</li>
+        <li>Representa a parede que divide átrios dos ventrículos</li>
+        <li>Contém: artéria coronária direita, veia cardíaca parva, seio coronário e ramo circunflexo da artéria coronária esquerda</li>
+      </ul>
+
+      <h3>Sulcos Interventriculares</h3>
+      <ul>
+        <li><strong>Anterior:</strong> superfície anterior; contém artéria interventricular anterior e veia cardíaca magna</li>
+        <li><strong>Posterior:</strong> face diafragmática; contém artéria interventricular posterior e veia interventricular posterior (cardíaca média). Inicia na altura do óstio da VCI e desce ao ápice</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Câmaras Cardíacas</h2>
+      <ul>
+        <li><strong>Átrios:</strong> câmaras de recepção que bombeiam sangue para os ventrículos</li>
+        <li><strong>Ventrículos:</strong> câmaras de ejeção</li>
+        <li><strong>Diástole</strong> = enchimento ventricular</li>
+        <li><strong>Sístole</strong> = esvaziamento ventricular</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Seio Coronário</h2>
+      <ul>
+        <li>Formado principalmente pela continuação da veia cardíaca magna à esquerda</li>
+        <li>Corre no sulco atrioventricular posterior em direção ao átrio direito</li>
+        <li>Recebe a veia cardíaca parva e interventricular posterior à direita</li>
+        <li>A veia oblíqua do átrio esquerdo (veia de Marshall) desemboca no início do seio coronário — importante marco anatômico da transição</li>
+        <li>Veias cardíaca média e parva desembocam posteriormente ao seio coronário</li>
+        <li>Possui a válvula de Tebésio</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Seio Transverso do Pericárdio</h2>
+      <div class="highlight">
+        <p><strong>Localização:</strong> posteriormente à aorta ascendente e tronco pulmonar; anteriormente à veia cava superior; superiormente ao átrio esquerdo.</p>
+      </div>
+      <p><strong>Limites:</strong></p>
+      <ul>
+        <li><strong>Anterior:</strong> face posterior da parte ascendente da aorta e do tronco pulmonar</li>
+        <li><strong>Posterior:</strong> face anterior da veia cava superior e teto do átrio esquerdo</li>
+        <li><strong>Inferior:</strong> átrio esquerdo</li>
+      </ul>
+      <p><strong>Importância cirúrgica:</strong> isolamento vascular. Permite passar dedo ou pinça por trás da aorta e tronco pulmonar para clampeamento aórtico e controle durante cirurgia cardíaca. Forma um túnel horizontal que separa vasos de saída arterial dos de entrada venosa.</p>
+    </section>
+
+    <section>
+      <h2>Seio Oblíquo do Pericárdio</h2>
+      <ul>
+        <li>Limitado pelas reflexões pericárdicas ao redor das veias pulmonares e da veia cava inferior</li>
+        <li>Fundo de saco fechado (cego) — não permite passagem de pinça de um lado ao outro</li>
+        <li>Permite elevação do coração com a mão ou compressa para expor estruturas</li>
+        <li>Essencial para anastomoses em artérias coronárias ou acesso às veias pulmonares</li>
+        <li>Importância clínica: local de acúmulo de líquido (derrame)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Átrio Direito</h2>
+      <ul>
+        <li>Forma a margem direita do coração</li>
+        <li>Recebe sangue venoso da VCS, VCI e seio coronário</li>
+        <li><strong>Aurícula direita:</strong> bolsa muscular que aumenta a capacidade do átrio</li>
+        <li>Parede posterior lisa = <strong>seio das veias cavas</strong> (orifícios das veias cavas e seio coronário)</li>
+        <li>Parede anterior rugosa = músculos pectíneos</li>
+        <li>Separação entre parte lisa e rugosa: <strong>crista terminal</strong> (internamente) e sulco terminal (externamente)</li>
+        <li>Crista terminal participa da condução elétrica atrial — fibras longitudinais favorecem propagação e atuam como barreira funcional transversal</li>
+        <li>Nó sinoatrial próximo à extremidade superior, na junção VCS-átrio direito</li>
+      </ul>
+
+      <h3>Óstios do Átrio Direito</h3>
+      <ul>
+        <li>Óstio da cava superior (sem válvulas)</li>
+        <li>Óstio da veia cava inferior — válvula de Eustáquio (impede refluxo)</li>
+        <li>Óstio atrioventricular (AV) direito</li>
+        <li>Óstio do seio coronário — entre óstio AV direito e óstio da VCI; válvula de Tebésio</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Átrio Esquerdo</h2>
+      <ul>
+        <li>Formato mais alongado; forma a maior parte da base do coração</li>
+        <li>Aurícula esquerda menor que a direita, com músculos pectíneos</li>
+        <li>Parte maior com paredes lisas</li>
+        <li>Quatro veias pulmonares (2 superiores + 2 inferiores) entram na parede posterior lisa</li>
+        <li>Parede mais espessa que a do átrio direito</li>
+        <li>Septo interatrial com o assoalho da fossa oval</li>
+        <li>Auriculeta esquerda: pequena projeção muscular — reservatório de sangue</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Septo Interatrial</h2>
+      <ul>
+        <li>Separa os átrios</li>
+        <li>Possui depressão: <strong>fossa oval</strong> — remanescente do forame oval e sua valva no feto</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Ventrículos — Trabéculas Cárneas</h2>
+      <p>Elevações musculares irregulares da parede interna dos ventrículos. Tornam a parede irregular e tridimensional.</p>
+      <p><strong>Classificação em 3 tipos:</strong></p>
+      <ol class="list-decimal pl-5 space-y-2 my-3">
+        <li><strong>1ª ordem — Músculos papilares:</strong> prendem-se à parede e dão origem às cordas tendíneas que se ligam às cúspides das valvas AV</li>
+        <li><strong>2ª ordem — Pontes musculares:</strong> fixam-se pelas duas extremidades, livres no meio. Ex.: trabécula septomarginal (banda moderadora)</li>
+        <li><strong>3ª ordem — Cristas musculares:</strong> aderidas em toda a extensão, formam apenas relevos</li>
+      </ol>
+      <p><strong>Função:</strong> reforçar a contração ventricular; distribuir força de contração; impedir que as paredes internas fiquem completamente justapostas na sístole; favorecer ejeção eficiente.</p>
+    </section>
+
+    <section>
+      <h2>Ventrículo Direito</h2>
+      <ul>
+        <li><strong>Crista supraventricular:</strong> separa a parede muscular rugosa (parte de entrada) da parede lisa do cone arterial (via de saída)</li>
+        <li>Parte de entrada recebe sangue pelo óstio AV direito (tricúspide), circundado por anéis fibrosos do esqueleto cardíaco</li>
+      </ul>
+
+      <h3>Valva Atrioventricular Direita (Tricúspide)</h3>
+      <ul>
+        <li>Três folhetos: cúspide anterior, posterior e septal (membranácea)</li>
+        <li>Bases inseridas no anel fibroso</li>
+        <li>Margem livre de cada cúspide ligada a dois dos três músculos papilares via cordas tendíneas</li>
+      </ul>
+      <p><strong>Músculos papilares:</strong></p>
+      <ul>
+        <li>Anterior → cúspides anterior e posterior</li>
+        <li>Posterior → cúspides posterior e septal</li>
+        <li>Septal → cúspides anterior e septal</li>
+      </ul>
+      <p>Contraem-se antes do restante do ventrículo, tensionando as cordas e impedindo refluxo.</p>
+
+      <h3>Septo Interventricular (SIV)</h3>
+      <ul>
+        <li>Parte muscular: espessura igual à parede do VE (2–3× mais espessa que a do VD); salienta-se para a cavidade do VD</li>
+        <li>Parte membranácea: muito menor. A válvula septal da tricúspide se fixa ao meio dela. Inferiormente = septo interventricular; superiormente = septo atrioventricular (separa átrio direito do ventrículo esquerdo)</li>
+      </ul>
+
+      <h3>Trabécula Septomarginal (Banda Moderadora)</h3>
+      <div class="highlight">
+        <p>Feixe muscular curvo que atravessa o VD da parte inferior do SIV até a base do músculo papilar anterior. Conduz fibras do ramo direito do feixe AV até o músculo papilar anterior. Atua como atalho elétrico, garantindo contração coordenada do VD.</p>
+      </div>
+
+      <h3>Via de Saída</h3>
+      <ul>
+        <li>Cone arterial → tronco pulmonar</li>
+        <li>Valva do tronco pulmonar: três válvulas semilunares</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Ventrículo Esquerdo</h2>
+      <ul>
+        <li>Forma o ápice do coração e quase toda a face esquerda</li>
+        <li>Paredes 2–3× mais espessas que as do VD</li>
+        <li>Trabéculas cárneas mais finas e numerosas</li>
+        <li>Cavidade cônica mais longa</li>
+        <li>Músculos papilares anterior e posterior maiores</li>
+        <li>Parte de saída: vestíbulo da aorta (parede lisa, não muscular)</li>
+        <li>Valva atrioventricular esquerda (mitral / bicúspide): dois folhetos</li>
+        <li>Óstio da aorta na parte posterossuperior direita, circundado por anel fibroso com válvulas direita, posterior e esquerda da valva aórtica</li>
+      </ul>
+    </section>
+  </article>
+
+  <footer class="border-t border-slate-200 dark:border-slate-700 py-8 mt-12">
+    <div class="max-w-3xl mx-auto px-4 text-center text-sm text-slate-500">
+      <a href="../index.html" class="text-medical-600 dark:text-medical-400 hover:underline">← Todos os resumos</a>
+    </div>
+  </footer>
+
+  <script>
+    const html = document.documentElement;
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) html.classList.add('dark');
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+    });
+  </script>
+</body>
+</html>

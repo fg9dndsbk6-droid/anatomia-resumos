@@ -1,1 +1,192 @@
-PLACEHOLDER
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parede Torácica & Caixa Torácica | Resumos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            medical: { 50:'#f0f9ff',100:'#e0f2fe',200:'#bae6fd',300:'#7dd3fc',400:'#38bdf8',500:'#0ea5e9',600:'#0284c7',700:'#0369a1',800:'#075985',900:'#0c4a6e' }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .prose h2 { @apply text-xl font-bold mt-10 mb-4 text-medical-800 dark:text-medical-300 border-b border-slate-200 dark:border-slate-700 pb-2; }
+    .prose h3 { @apply text-lg font-semibold mt-6 mb-3 text-slate-800 dark:text-slate-200; }
+    .prose ul { @apply list-disc pl-5 space-y-1 my-3; }
+    .prose p { @apply my-3 leading-relaxed; }
+    .prose strong { @apply font-semibold text-slate-900 dark:text-white; }
+    .highlight { @apply bg-medical-50 dark:bg-slate-800/80 border-l-4 border-medical-500 pl-4 py-3 my-4 rounded-r-lg; }
+  </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen">
+  <nav class="sticky top-0 z-50 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-700">
+    <div class="max-w-3xl mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-2 text-medical-700 dark:text-medical-400 font-medium text-sm">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Voltar
+      </a>
+      <button id="themeToggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700">
+        <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <article class="max-w-3xl mx-auto px-4 py-10 prose">
+    <header class="mb-10">
+      <p class="text-sm text-medical-600 dark:text-medical-400 font-medium mb-1">Prof. Hespanha · 29/07/2026 · Fontes: Aula, Moore, Netter, Gray, Kenhub</p>
+      <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">Parede Torácica & Caixa Torácica</h1>
+    </header>
+
+    <section>
+      <h2>Funções da Parede Torácica</h2>
+      <ul>
+        <li>Proteção dos órgãos vitais</li>
+        <li>Sustentação do peso do corpo (coluna esternal)</li>
+        <li>Resistência à pressão intratorácica subatmosférica (retração elástica dos pulmões + movimentos inspiratórios)</li>
+        <li>Ponto de fixação para músculos dos membros superiores, respiratórios, dorsais, pescoço e abdome</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Esqueleto — Ossos e Cartilagens</h2>
+      <p>A cartilagem facilita a amplitude de movimento e protege dissipando impacto por deformação.</p>
+      <p><strong>Limites:</strong></p>
+      <ul>
+        <li>Superior: borda superior da 1ª costela + borda superior do esterno + T1</li>
+        <li>Inferior: borda inferior da 12ª costela + borda inferior de T12</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Costelas</h2>
+      <p>12 pares de ossos planos e curvos que conectam o esterno à maioria das vértebras torácicas.</p>
+
+      <h3>Classificação por conexão ao esterno</h3>
+      <ul>
+        <li><strong>Verdadeiras (vertebrocostais):</strong> 1ª–7ª — articulam-se diretamente com o esterno pela própria cartilagem</li>
+        <li><strong>Falsas (vertebrocondrais):</strong> 8ª–10ª — articulam-se indiretamente via cartilagem de outra costela</li>
+        <li><strong>Flutuantes (livres):</strong> 11ª e 12ª — não se conectam ao esterno</li>
+      </ul>
+
+      <h3>Classificação tipológica</h3>
+      <ul>
+        <li><strong>Típicas:</strong> 3ª a 9ª</li>
+        <li><strong>Atípicas:</strong> 1ª, 2ª, 10ª, 11ª e 12ª</li>
+      </ul>
+
+      <h3>Costela Típica — Partes</h3>
+      <ul>
+        <li><strong>Cabeça:</strong> face articular superior (com fóvea inferior da vértebra acima) + face articular inferior (com fóvea superior da própria vértebra); separadas pela crista da cabeça</li>
+        <li><strong>Colo:</strong> parte mais estreita, une cabeça ao corpo</li>
+        <li><strong>Tubérculo:</strong> área rugosa (ligamento costotransversário) + face articular (processo transverso da vértebra)</li>
+        <li><strong>Corpo:</strong> fino, plano e curvo; possui ângulo da costela e sulco da costela (protege vasos e nervos na margem inferior)</li>
+      </ul>
+
+      <h3>Costelas Atípicas</h3>
+      <ul>
+        <li><strong>1ª:</strong> curta e larga; uma face articular na cabeça; tubérculo escaleno (inserção do escaleno anterior) separa sulcos da veia e artéria subclávia</li>
+        <li><strong>2ª:</strong> curta e larga; tuberosidade do serrátil anterior</li>
+        <li><strong>10ª–12ª:</strong> uma face articular na cabeça, sem crista; 11ª e 12ª sem colo e sem tubérculo</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Vértebras Torácicas</h2>
+      <p>12 vértebras; cada uma se articula com um par de costelas.</p>
+      <p><strong>Típicas (T2–T9):</strong></p>
+      <ul>
+        <li>Corpo em forma de coração, arredondado</li>
+        <li>Processos espinhosos longos e inclinados inferiormente</li>
+        <li>Processos transversos laterais com facetas costais</li>
+        <li>Forame vertebral circular</li>
+        <li>Processos articulares: superior (projetados posteriormente), inferior (projetados anteriormente)</li>
+      </ul>
+      <p><strong>Articulações:</strong></p>
+      <ul>
+        <li><strong>Costovertebral:</strong> cabeça da costela com dois corpos vertebrais adjacentes + disco intervertebral</li>
+        <li><strong>Costotransversária:</strong> tubérculo da costela com processo transverso da vértebra</li>
+      </ul>
+      <p><strong>Atípicas:</strong> T1, T10, T11, T12.</p>
+    </section>
+
+    <section>
+      <h2>Esterno</h2>
+      <p>Osso plano que se articula com a clavícula e as 7 cartilagens costais superiores.</p>
+      <ul>
+        <li><strong>Manúbrio:</strong> osso quadrangular; inserção do peitoral maior e esternocleidomastóideo (anterior); esternoióideo e esternotireóideo (posterior)</li>
+        <li><strong>Corpo:</strong> longo e plano; superfície anterior convexa; origem do músculo transverso do tórax (posterior); facetas laterais para cartilagens 3–7</li>
+        <li><strong>Processo xifoide:</strong> projeção pontiaguda (não calcifica); inserção do reto abdominal e aponeuroses dos oblíquos; origem do ligamento esternopericárdico inferior e parte do diafragma</li>
+      </ul>
+      <p><strong>Ângulo de Louis (ângulo esternal):</strong> junção manúbrio-corpo.</p>
+      <p><strong>Articulações:</strong> esternoclavicular (selar), manubrioesternal, xifoesternal, esternocostais.</p>
+    </section>
+
+    <section>
+      <h2>Articulações da Caixa Torácica</h2>
+      <ul>
+        <li>Manubrioesternal</li>
+        <li>Esternoclaviculares</li>
+        <li>Xifoesternal</li>
+        <li>Esternocostais</li>
+        <li>Costocondrais</li>
+        <li>Intercondrais</li>
+        <li>Costovertebrais</li>
+        <li>Intervertebrais</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Espaço Intercostal</h2>
+      <p>Espaços entre costelas adjacentes preenchidos por músculos intercostais. O sulco da costela (margem inferior) protege a tríade neurovascular: veia, artéria e nervo intercostais.</p>
+    </section>
+
+    <section>
+      <h2>Músculos da Parede Torácica</h2>
+      <p><strong>Intrínsecos</strong> (começam e terminam em ossos do tórax).</p>
+
+      <h3>Músculos Intercostais (T1–T11)</h3>
+      <ul>
+        <li><strong>Externo:</strong> eleva as costelas (inspiração). Fibras “mão no bolso”. Estende-se das margens inferiores das costelas até a margem superior da costela abaixo</li>
+        <li><strong>Interno:</strong> deprime e eleva costelas. Fibras “mão no peito”. Das regiões paraesternais até o ângulo das costelas</li>
+        <li><strong>Íntimo:</strong> mesma orientação do interno; mais evidente lateralmente. Separado do interno pelos feixes neurovasculares</li>
+      </ul>
+
+      <h3>Outros Músculos</h3>
+      <ul>
+        <li><strong>Transverso do tórax:</strong> face profunda da parede anterior; deprime as costelas. Inervado por nervos intercostais</li>
+        <li><strong>Subcostais:</strong> superfície interna da parede posterior; deprimem as costelas</li>
+        <li><strong>Serrátil posterior superior:</strong> eleva as 4 primeiras costelas (inspiratório). Origem: ligamento nucal e processos espinhosos C7–T3</li>
+        <li><strong>Serrátil posterior inferior:</strong> deprime as costelas. Origem: fáscia toracolombar e processos espinhosos de vértebras torácicas inferiores e lombares superiores. Inervado por nervos espinhais T9–T12</li>
+        <li><strong>Levantadores das costelas:</strong> 12 músculos triangulares dos processos transversos de C7–T11 até as costelas adjacentes. Elevam as costelas e têm função proprioceptiva. Inervados por ramos posteriores de T1–T12</li>
+      </ul>
+    </section>
+  </article>
+
+  <footer class="border-t border-slate-200 dark:border-slate-700 py-8 mt-12">
+    <div class="max-w-3xl mx-auto px-4 text-center text-sm text-slate-500">
+      <a href="../index.html" class="text-medical-600 dark:text-medical-400 hover:underline">← Todos os resumos</a>
+    </div>
+  </footer>
+
+  <script>
+    const html = document.documentElement;
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) html.classList.add('dark');
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+    });
+  </script>
+</body>
+</html>
